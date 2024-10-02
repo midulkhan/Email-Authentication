@@ -11,7 +11,6 @@ async function dbConnect() {
 
     connection.on("error", (err) => {
       console.log("db connection error" + err);
-      process.exit();
     });
   } catch (err) {
     throw new Error("DB connection failed");
